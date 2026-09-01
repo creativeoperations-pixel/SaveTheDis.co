@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SaveTheDis.co</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&display=swap" rel="stylesheet">
+<style>
+  /* Layout mirrors the client screenshot (642px wide reference).
+     Type is a Didone: Didot where available (Mac/iOS), Bodoni Moda elsewhere. */
+
+  :root {
+    /* 51px at the 642px reference width = 7.9vw */
+    --statement: min(51px, 7.9vw);
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-family: Didot, 'Bodoni Moda', 'Bodoni 72', 'Times New Roman', serif;
+    max-width: 642px;
+    margin: 0 auto;
+    padding: 1.45em 0 3em;
+    font-size: var(--statement);
+    text-align: center;
+    cursor: url('images/cursor-target.png') 24 24, auto;
+  }
+  a { color: #000; cursor: url('images/cursor-target.png') 24 24, auto; }
+
+  .statement { margin: 0; line-height: 1.6; }
+  .statement p { margin: 0; }
+
+  /* "YOU" with the target standing in for the O — slightly more space above */
+  .you {
+    margin-top: 0.3em !important;
+    display: inline-flex;
+    align-items: center;
+  }
+  .you img { width: 0.72em; height: 0.72em; display: block; }
+
+  .target {
+    width: 98.4%;
+    height: auto;
+    display: block;
+    margin: 1.25em auto 0;
+  }
+
+  /* Caption under the target */
+  .caption {
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #ff0000;
+    font-size: 0.51em;
+    margin: 0.78em 0 0;
+  }
+
+  .contact {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.53em;
+    margin: 1.2em 0 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="statement">
+  <p>If you're seeing this</p>
+  <p>SaveTheDis.co</p>
+  <p>has seen</p>
+  <p class="you">Y<img src="images/DIS_target.png" alt="O">U</p>
+</div>
+
+<img class="target" src="images/DIS_target.png" alt="">
+
+<p class="caption">Screenshot</p>
+
+<p class="contact"><a href="mailto:id@savethedis.co">id@SaveTheDis.co</a></p>
+
+</body>
+</html>
